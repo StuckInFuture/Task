@@ -6,6 +6,9 @@ class BasePage:
         self.progressbar = UIElement(
             driver, "//div[contains(@class, 'loading')]"
         )
+        self.privacy_agree_btn = UIElement(
+            driver, "//button[contains(@id, 'didomi-notice-agree-button')]"
+        )
         self.username_field = UIElement(
             driver, "//input[@id='username']"
         )
